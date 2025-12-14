@@ -1,0 +1,7 @@
+ip addr add 10.42.116.133/30 dev eth0
+ip addr add 10.42.116.129/30 dev eth1
+# Routing Anello NORD (Orario) -> Verso R3
+ip route add 10.42.0.0/16 via 10.42.116.134
+# NAT per Internet
+iptables -t nat -A POSTROUTING -s 10.42.0.0/16 -o eth2 -j MASQUERADE
+cat /shared/etc_hosts >> /etc/hosts

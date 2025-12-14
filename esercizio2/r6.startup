@@ -1,0 +1,13 @@
+ip addr add 10.42.116.157/30 dev eth0
+ip addr add 10.42.32.1/19 dev eth1
+ip addr add 10.42.116.161/30 dev eth2
+ip addr add 10.42.116.165/30 dev eth3
+ip addr add 10.42.116.150/30 dev eth4
+# Default (Internet + Nord) -> Verso R4 (Orario)
+ip route add default via 10.42.116.149
+# Eccezioni SUD (Antiorario) -> Verso R11
+ip route add 10.42.96.0/21 via 10.42.116.166
+ip route add 10.42.104.0/22 via 10.42.116.166
+ip route add 10.42.112.0/22 via 10.42.116.166
+ip route add 10.42.116.0/25 via 10.42.116.166
+cat /shared/etc_hosts >> /etc/hosts

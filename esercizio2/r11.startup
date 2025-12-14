@@ -1,0 +1,6 @@
+ip addr add 10.42.116.166/30 dev eth0
+ip addr add 10.42.116.182/30 dev eth1
+ip addr add 10.42.112.1/22 dev eth2
+# Routing Anello SUD (Antiorario) -> Verso R10
+ip route add default via 10.42.116.181
+cat /shared/etc_hosts >> /etc/hosts
