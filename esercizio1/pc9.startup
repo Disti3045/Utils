@@ -1,2 +1,2 @@
-ip addr add 10.42.112.2/22 dev eth0
-ip route add default via 10.42.112.1
+ip addr add 10.42.0.2/19 dev eth0
+ip route add default via 10.42.0.1

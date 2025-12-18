@@ -2,15 +2,15 @@ import re
 
 # Associazione: Nome Rete nel lab.conf -> Numero Host richiesti
 DATI_LAN = {
-    "C": 7506, # Toscana
-    "E": 5346, # Campania
-    "A": 3661, # Liguria
-    "B": 3314, # Veneto
-    "F": 1558, # Calabria
-    "H": 938,  # Sicilia
-    "D": 752,  # Marche
-    "I": 538,  # Sardegna
-    "G": 109   # Puglia
+    "I": 7782,  # Sardegna
+    "E": 6277, # Campania
+    "D": 4061,  # Marche
+    "B": 3178, # Veneto
+    "C": 1634, # Toscana
+    "F": 1104, # Calabria
+    "A": 690, # Liguria
+    "H": 541,  # Sicilia
+    "G": 103   # Puglia
 }
 
 IP_BASE_STR = "10.42.0.0/16"
