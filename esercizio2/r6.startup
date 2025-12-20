@@ -1,10 +1,12 @@
-ip addr add 10.42.116.157/30 dev eth0
-ip addr add 10.42.32.1/19 dev eth1
-ip addr add 10.42.116.161/30 dev eth2
-ip addr add 10.42.116.150/30 dev eth3
-ip route add default via 10.42.116.149
-ip route add 10.42.96.0/21 via 10.42.116.162
-ip route add 10.42.104.0/22 via 10.42.116.162
-ip route add 10.42.112.0/22 via 10.42.116.162
-ip route add 10.42.116.0/25 via 10.42.116.162
-cat /shared/etc_hosts >> /etc/hosts
+ip addr add 10.42.120.146/30 dev eth0
+ip addr add 10.42.120.153/30 dev eth1
+ip addr add 10.42.32.1/19 dev eth2
+ip addr add 10.42.120.157/30 dev eth3
+
+ip route add default via 10.42.116.14 #Nord
+
+#supernetting non possibile per Sud
+ip route add 10.42.0.0/19 via 10.42.120.158
+ip route add 10.42.116.0/22 via 10.42.120.158
+ip route add 10.42.104.0/21 via 10.42.120.158
+ip route add 10.42.120.0/25 via 10.42.120.158
