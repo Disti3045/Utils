@@ -1,4 +1,0 @@
-ip addr add 10.42.120.150/30 dev eth0
-ip addr add 10.42.120.161/30 dev eth1
-ip addr add 10.42.120.154/30 dev eth2
-ip addr add 10.42.64.1/20 dev eth3

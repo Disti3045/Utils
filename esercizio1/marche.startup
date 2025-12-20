@@ -1,1 +1,0 @@
-ip addr add 10.42.64.2/20 dev eth0
