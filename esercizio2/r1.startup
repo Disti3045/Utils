@@ -1,6 +1,0 @@
-ip addr add 10.42.120.129/30 dev eth0
-ip addr add 10.42.120.133/30 dev eth1
-
-ip route add 10.42.0.0/16 via 10.42.120.134
-
-iptables -t nat -A POSTROUTING -s 10.42.0.0/16 -o eth2 -j MASQUERADE
