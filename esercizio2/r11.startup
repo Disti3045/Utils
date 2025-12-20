@@ -1,0 +1,5 @@
+ip addr add 10.42.120.158/30 dev eth0
+ip addr add 10.42.120.174/30 dev eth1
+ip addr add 10.42.0.1/19 dev eth2
+
+ip route add default via 10.42.120.173
